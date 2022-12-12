@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2341FB3829471DCB0083C82D /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341FB3729471DCB0083C82D /* PizzaViewController.swift */; };
+		2341FB3A29471E370083C82D /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341FB3929471E370083C82D /* PizzaModel.swift */; };
 		239BB20D29422AFC007D7311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB20C29422AFC007D7311 /* AppDelegate.swift */; };
 		239BB20F29422AFC007D7311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB20E29422AFC007D7311 /* SceneDelegate.swift */; };
-		239BB21129422AFC007D7311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB21029422AFC007D7311 /* ViewController.swift */; };
 		239BB21429422AFC007D7311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239BB21229422AFC007D7311 /* Main.storyboard */; };
 		239BB21629422AFF007D7311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239BB21529422AFF007D7311 /* Assets.xcassets */; };
 		239BB21929422AFF007D7311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239BB21729422AFF007D7311 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2341FB3729471DCB0083C82D /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
+		2341FB3929471E370083C82D /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		239BB20929422AFC007D7311 /* DominiPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominiPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239BB20C29422AFC007D7311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239BB20E29422AFC007D7311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		239BB21029422AFC007D7311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		239BB21329422AFC007D7311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		239BB21529422AFF007D7311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		239BB21829422AFF007D7311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +58,56 @@
 		239BB20B29422AFC007D7311 /* DominiPizza */ = {
 			isa = PBXGroup;
 			children = (
-				239BB20C29422AFC007D7311 /* AppDelegate.swift */,
-				239BB20E29422AFC007D7311 /* SceneDelegate.swift */,
-				239BB21029422AFC007D7311 /* ViewController.swift */,
-				239BB21229422AFC007D7311 /* Main.storyboard */,
-				239BB21529422AFF007D7311 /* Assets.xcassets */,
-				239BB21729422AFF007D7311 /* LaunchScreen.storyboard */,
-				239BB21A29422AFF007D7311 /* Info.plist */,
+				239BB22329422BC2007D7311 /* Resourse */,
+				239BB22029422B3E007D7311 /* APP */,
+				239BB22129422B72007D7311 /* ViewControllers */,
+				239BB22229422B9B007D7311 /* Storyboards */,
+				239BB22429422BD8007D7311 /* Models */,
 			);
 			path = DominiPizza;
+			sourceTree = "<group>";
+		};
+		239BB22029422B3E007D7311 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				239BB20E29422AFC007D7311 /* SceneDelegate.swift */,
+				239BB20C29422AFC007D7311 /* AppDelegate.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		239BB22129422B72007D7311 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2341FB3729471DCB0083C82D /* PizzaViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		239BB22229422B9B007D7311 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				239BB21729422AFF007D7311 /* LaunchScreen.storyboard */,
+				239BB21229422AFC007D7311 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		239BB22329422BC2007D7311 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				239BB21529422AFF007D7311 /* Assets.xcassets */,
+				239BB21A29422AFF007D7311 /* Info.plist */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		239BB22429422BD8007D7311 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2341FB3929471E370083C82D /* PizzaModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239BB21129422AFC007D7311 /* ViewController.swift in Sources */,
 				239BB20D29422AFC007D7311 /* AppDelegate.swift in Sources */,
 				239BB20F29422AFC007D7311 /* SceneDelegate.swift in Sources */,
+				2341FB3A29471E370083C82D /* PizzaModel.swift in Sources */,
+				2341FB3829471DCB0083C82D /* PizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +337,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OxanaPopova.DominiPizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +368,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OxanaPopova.DominiPizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
